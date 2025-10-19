@@ -1,0 +1,19 @@
+{
+  "name": "cognexo-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test tests/e2e",
+    "test:api": "npx playwright test tests/api",
+    "test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.8.0"
+  }
+}

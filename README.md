@@ -31,7 +31,7 @@ npx playwright test tests/api
 
 1- Why these tests were chosen:
 - Focused automation on the highest-risk user journeys — areas that directly affect revenue and user trust.
-- Add-to-cart and subtotal validation: verifies UI and calculation consistency for cart totals.
+- Add-to-basket and subtotal validation: verifies UI and calculation consistency for basket totals.
 - Pagination and product uniqueness: ensures catalog discoverability and prevents duplicates/missing items.
 - GraphQL API contract checks: validate backend schema and error handling.
 
@@ -43,12 +43,12 @@ npx playwright test tests/api
 3- Planned next steps (given more time):
 - Quantity-change and remove-item flows to confirm totals update correctly.
 - Cross‑browser coverage (Firefox, WebKit) for broader confidence.
-- Lightweight visual regression on key pages (catalog, cart).
-- Negative flows (add items out of stock, entering invalid address or payment details)
+- Lightweight visual regression on key pages (catalog, basket, registration, payment).
+- Negative flows (add items out of stock, entering invalid address or invalid payment details)
 - Capture traces/screenshots on failure.  
 
 ## CI/CD strategy (overview)
-- Pull requests: run API happy/negative paths and a small E2E smoke set (cart totals, pagination) for fast feedback.
+- Pull requests: run API happy/negative paths and a small E2E smoke set (basket totals, pagination) for fast feedback.
 - Nightly regression: run full cross‑browser E2E suite with traces/screenshots enabled.
 - Release gating: block only on critical cart/checkout flows; non‑critical failures file tickets but do not block delivery.
 

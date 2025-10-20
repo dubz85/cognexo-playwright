@@ -6,6 +6,9 @@ This repository contains Playwright-based E2E tests and API tests used for the t
 - E2E tests run against `https://demowebshop.tricentis.com` (site chosen because it exposes a visible cart).  
 - API tests run against `https://countries.trevorblades.com` (GraphQL demo API).
 
+- **More Information**
+- The Discovery file provides further insight into my automation strategy, including scope definition, risk assessment, and reasoning behind key end-to-end checks.
+
 ## Requirements
 - Node.js 18+ (LTS recommended)  
 - npm
